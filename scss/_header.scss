@@ -1,0 +1,207 @@
+header {
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  // border: 1px solid yellow;
+
+  .header-email {
+    transform: rotate(-90deg);
+    position: fixed;
+    top: 80%;
+    right: 86%;
+    a {
+      transition: $transition-effect;
+      &:hover {
+        cursor: pointer;
+        color: $accent-color;
+        border-bottom: 1px solid $primary-text-color;
+      }
+    }
+  }
+
+  .header-images {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 68%;
+    left: 91%;
+    padding: 0.2em;
+
+    svg {
+      margin-bottom: 0.2em;
+      transition: $transition-effect;
+      path {
+        fill: $primary-text-color;
+      }
+      &:hover {
+        cursor: pointer;
+        path {
+          fill: $accent-color;
+        }
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 4em;
+
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-transform: uppercase;
+      padding: 0.2em;
+
+      .lead {
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-bottom: -1.2em;
+        margin-left: 0.2em;
+        text-transform: none;
+        align-self: flex-start;
+      }
+
+      h1 {
+        margin-bottom: 0em;
+        word-spacing: 0.3em;
+        font-size: 5rem;
+        font-weight: 900;
+      }
+
+      .hero-description {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-top: -0.1em;
+        margin-bottom: 1.5em;
+        text-transform: lowercase;
+        align-self: flex-end;
+        // text-align: right;
+
+        .emphasize {
+          border-bottom: 2px solid $accent-color;
+          text-transform: capitalize;
+        }
+
+        .hero-description-figure {
+          font-size: 1.2rem;
+          margin-right: 0.5em;
+          font-weight: 400;
+        }
+      }
+
+      .btn {
+        margin-top: 1.5em;
+        text-align: center;
+
+        &:hover {
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////
+/*--------------MEDIA QUERIES----------------------*/
+/////////////////////////////////////////////////////////////////
+/* ============= Medium Devices ================ */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-email {
+      transform: rotate(0deg);
+      position: unset;
+    }
+
+    .header-images {
+      flex-direction: row;
+      position: unset;
+      svg {
+        margin-right: 0.8em;
+      }
+    }
+
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      margin-top: 4em;
+
+      .header-content {
+        justify-content: center;
+        align-items: center;
+        padding: 0.5em;
+
+        .lead {
+          font-size: 1.2rem;
+          margin-bottom: -0.5em;
+        }
+
+        h1 {
+          margin-bottom: 0em;
+          word-spacing: 0.3em;
+          font-size: 3rem;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}
+/* ============= Small Devices ================ */
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-email {
+      transform: rotate(0deg);
+      position: unset;
+    }
+
+    .header-images {
+      flex-direction: row;
+      position: unset;
+      svg {
+        margin-right: 0.8em;
+      }
+    }
+
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      margin-top: 4em;
+
+      .header-content {
+        justify-content: center;
+        align-items: center;
+        padding: 0.5em;
+
+        .lead {
+          font-size: 1.2rem;
+          margin-bottom: -0.5em;
+        }
+
+        h1 {
+          margin-bottom: 0em;
+          word-spacing: 0.3em;
+          font-size: 3rem;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}
