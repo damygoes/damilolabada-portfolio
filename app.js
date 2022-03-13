@@ -26,3 +26,18 @@ if(window.innerWidth < 1024) {
         navItem.addEventListener('click', () => {closeNav()})
     })
 }
+
+
+
+// Navbar changes color on scroll
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() > $(window).height()){
+            $("#main-Nav .container").css({"background-color":"black"});   
+        }
+        else{
+            $("#main-Nav .container").css({"background-color":"white"});
+        }
+
+    })
+})
