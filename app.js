@@ -30,14 +30,20 @@ if(window.innerWidth < 1024) {
 
 
 // Navbar changes color on scroll
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if($(window).scrollTop() > $(window).height()){
-            $("#main-Nav .container").css({"background-color":"black"});   
-        }
-        else{
-            $("#main-Nav .container").css({"background-color":"white"});
-        }
+// $(document).ready(function(){
+//     $(body).scroll(function(){
+//         if($(window).scrollTop() > $(window).height()){
+//             $("#main-Nav .container").css({"background-color":"black"});   
+//         }
+//         else{
+//             $("#main-Nav .container").css({"background-color":"white"});
+//         }
 
-    })
+//     })
+// })
+
+window.addEventListener('scroll', function() {
+    let mainNavBar = document.querySelector('#main-Nav');
+    let windowPosition = window.scrollY > 0;
+    mainNavBar.classList.toggle('scrolling-active', windowPosition)
 })
