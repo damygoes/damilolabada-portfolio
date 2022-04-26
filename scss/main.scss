@@ -326,6 +326,7 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             background-color: transparent;
+            color: #fff;
           }
 
           input[type="text"] {
@@ -350,6 +351,9 @@
           textarea::-webkit-resizer {
             display: none;
           }
+          // input[type=text],input[type=text]::placeholder{
+          //   color:#ffffff;
+          //  }
         }
       }
     }
