@@ -69,7 +69,7 @@ header {
       h1 {
         margin-bottom: 0em;
         word-spacing: 0.3em;
-        font-size: 5rem;
+        font-size: 6rem;
         font-weight: 900;
       }
 
@@ -84,8 +84,10 @@ header {
 
         .emphasize {
           border-bottom: 2px solid $accent-color;
-          text-transform: capitalize;
+          
         }
+
+        
 
         .hero-description-figure {
           font-size: 1.2rem;
@@ -104,6 +106,10 @@ header {
       }
     }
   }
+}
+
+#test {
+  border: none;
 }
 
 /////////////////////////////////////////////////////////////////

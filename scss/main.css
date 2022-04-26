@@ -321,7 +321,7 @@ header .container .header-content .lead {
 header .container .header-content h1 {
   margin-bottom: 0em;
   word-spacing: 0.3em;
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 900;
 }
 
@@ -337,7 +337,6 @@ header .container .header-content .hero-description {
 
 header .container .header-content .hero-description .emphasize {
   border-bottom: 2px solid #ff8300;
-  text-transform: capitalize;
 }
 
 header .container .header-content .hero-description .hero-description-figure {
@@ -353,6 +352,10 @@ header .container .header-content .btn {
 
 header .container .header-content .btn:hover {
   background-color: #076c74;
+}
+
+#test {
+  border: none;
 }
 
 /*--------------MEDIA QUERIES----------------------*/
