@@ -336,7 +336,11 @@ header .container .header-content .hero-description {
 }
 
 header .container .header-content .hero-description .emphasize {
+<<<<<<< HEAD
   border-bottom: 2px solid #ff8300;
+=======
+  text-transform: capitalize;
+>>>>>>> sass-branch
 }
 
 header .container .header-content .hero-description .hero-description-figure {
