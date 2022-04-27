@@ -232,12 +232,14 @@
 
 #contact {
   height: 100vh;
-  overflow: hidden;
+  // overflow: hidden;
 
   .container {
     display: flex;
     flex-direction: column;
-    padding: 2em;
+    // justify-content: center;
+    padding: 3em;
+    height: 100vh;
     // border: 1px solid yellow;
     overflow: hidden;
 
@@ -246,7 +248,7 @@
       font-weight: 400;
       text-transform: capitalize;
       margin-bottom: 0.5em;
-      margin-top: 2em;
+      margin-top: 3em;
       text-align: left;
 
       .page-number {
@@ -256,111 +258,53 @@
       }
     }
 
-    .form-wrapper {
+    .form-wrapper{
       display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      padding: 2em;
-      overflow: hidden;
-      // border: 1px solid yellow;
-      .contact-cta {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-        // height: 50%;
+      
+      .cards-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 2em;
+        margin-top: 3em;
+        text-align: center;
+        // height: 100%;
         // border: 1px solid red;
 
-        .question {
-          font-size: 2.5rem;
-          font-weight: 700;
-          text-transform: capitalize;
-          padding: 0.5em 0.5em 0em 0.5em;
-
-          & + p {
-            display: block;
-            font-size: 1rem;
-            font-weight: 400;
-            padding: 0.5em 1em 1em 1em;
-            text-align: center;
-            word-wrap: normal;
-          }
-        }
-      }
-
-      .form-field-container {
-        height: 100%;
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        // border: 1px solid orange;
-
-        form {
+        .card{
           display: flex;
           flex-direction: column;
+          align-items: center;
           justify-content: center;
+          border: 1px solid white;
+          border-radius: 10px;
           padding: 2em;
-          height: 100%;
-          width: 70%;
-          border: 1px solid $dark-color;
-          border-radius: 10% 0 20% 0;
-          box-shadow: 5px 5px 10px 0.1px $secondary-color;
-
-          .form-btn {
-            width: 40%;
-            transition: $transition-effect;
-
-            &:hover {
-              background-color: $secondary-color;
-            }
+          cursor: pointer;
+          transition: 200ms all ease-in;
+          &:hover{
+            border: none;
+            background-color: $primary-color;
+            color: $primary-text-color;
           }
 
-          label {
-            padding: 1em 1em 0.3em 0;
-            margin-top: 1em;
-            display: inline-block;
+          h4{
+            font-size: 1.5rem;
+            font-weight: 400;
           }
 
-          input[type="text"],
-          textarea {
-            width: 100%;
-            padding: 0.5em;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: transparent;
-            color: #fff;
+          h5{
+            font-size: 1rem;
+            font-weight: 300;
+            margin: 1em 0;
           }
 
-          input[type="text"] {
-            height: 10%;
-          }
-
-          textarea {
-            height: 30%;
-            margin-bottom: 2em;
-          }
-
-          input::placeholder,
-          textarea::placeholder {
-            color: $light-color;
-            font-size: 0.8rem;
-            font-weight: 100;
-            
-          }
-
-          textarea::placeholder {
-            padding: 0em;
-          }
-          textarea::-webkit-resizer {
-            display: none;
-          }
-          // input[type=text],input[type=text]::placeholder{
-          //   color:#ffffff;
-          //  }
         }
+
       }
     }
+
+    
   }
 }
 
