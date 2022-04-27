@@ -563,6 +563,7 @@ header .container .header-content .btn:hover {
 /* ======================== Projects/Work Section ======================== */
 #projects {
   height: 100vh;
+  overflow: scroll;
 }
 
 #projects .container {
@@ -743,7 +744,8 @@ header .container .header-content .btn:hover {
 .app-three .app-info .app-dev-tools ul li:hover,
 .app-four .app-info .app-dev-tools ul li:hover,
 .app-five .app-info .app-dev-tools ul li:hover {
-  border-bottom: 1px solid #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
 }
 
 /* ======================== Contact Section ======================== */
@@ -768,7 +770,7 @@ header .container .header-content .btn:hover {
   font-size: 3.2rem;
   font-weight: 400;
   text-transform: capitalize;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   margin-top: 2em;
   text-align: left;
 }
@@ -780,30 +782,18 @@ header .container .header-content .btn:hover {
 }
 
 #contact .container .form-wrapper {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  -ms-grid-columns: 40% 55%;
-      grid-template-columns: 40% 55%;
-  gap: 5%;
-  padding: 0.2em;
-}
-
-#contact .container .form-wrapper .contact-cta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50%;
+  margin: 0;
+  padding: 2em;
+  overflow: hidden;
 }
 
 #contact .container .form-wrapper .contact-cta .question {
@@ -824,7 +814,7 @@ header .container .header-content .btn:hover {
 
 #contact .container .form-wrapper .form-field-container {
   height: 100%;
-  width: 100%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -844,7 +834,7 @@ header .container .header-content .btn:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 3em;
+  padding: 2em;
   height: 100%;
   width: 70%;
   border: 1px solid #0e0905;
@@ -865,6 +855,7 @@ header .container .header-content .btn:hover {
 
 #contact .container .form-wrapper .form-field-container form label {
   padding: 1em 1em 0.3em 0;
+  margin-top: 1em;
   display: inline-block;
 }
 
